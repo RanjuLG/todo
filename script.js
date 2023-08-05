@@ -110,3 +110,5 @@ function downloadList() {
     downloadLink.download = 'list_history.txt';
     downloadLink.click();
 }
+
+localStorage.setItem('currentList', JSON.stringify(currentList));
