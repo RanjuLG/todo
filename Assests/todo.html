@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>todo</title>
+    <meta charset="utf-8">
+    <!-- bootstrapst css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="icon" href="check2-circle.ico">
+    <script src= "script.js"></script>
+  </head>
+  <body>
+    <div class="container mt-4">
+  
+      <h3> <i class="bi bi-check2-circle" style="font-size: 2rem; color: rgb(0, 153, 255);"></i> Todo</h3>
+      
+
+      <h5 id="currentDate"></h5>
+      <div class="input-group mb-3 w-25">
+        <button class="btn btn-outline-primary" type="button" id="button-addon1" onclick= "addToList()" ><i class="bi bi-plus-circle"></i></button>
+        <input type="text" id="listItemInput" class="form-control" placeholder="Add tasks" onkeypress ="handleKeyPress(event)" onchange="toggleLabelStrikeThrough(this)" aria-label="Example text with button addon" aria-describedby="button-addon1">
+      </div>
+      <ul class="list-group list-group-flush" id="itemList"></ul>
+      <div>
+        <div class="d-grid gap-2 d-md-block" id="crud">
+          <button id="save" class="btn btn-outline-success" type="button" onclick="saveList()" title="Save Tasks"><i class="bi bi-save2"></i></button>
+          <button id= "clear" class="btn btn-outline-danger" type="button" onclick="clearAll()" id='clear-All' title="Clear All Tasks"><i class="bi bi-x-circle"></i></button>
+          <button id="history" class="btn btn-outline-info" type="button" onclick="toggleHistory()" title="Show History"><i class="bi bi-clock-history"></i></button>
+        </div>
+        <div id="history-container" ></div>
+      </div>
+  </div>
+
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</html>
