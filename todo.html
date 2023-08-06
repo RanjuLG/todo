@@ -22,10 +22,10 @@
       </div>
       <ul class="list-group list-group-flush" id="itemList"></ul>
       <div>
-        <div class="d-grid gap-2 d-md-block">
-          <button class="btn btn-outline-danger" type="button" onclick="clearAll()" id='clear-All'>Clear All</button>
-          <button class="btn btn-outline-info" type="button" onclick="toggleHistory()">History</button>
-          <button class="btn btn-outline-success" type="button" onclick="saveList()">Save</button>
+        <div class="d-grid gap-2 d-md-block" id="crud">
+          <button id="save" class="btn btn-outline-success" type="button" onclick="saveList()" title="Save Tasks"><i class="bi bi-save"></i></button>
+          <button id= "clear" class="btn btn-outline-danger" type="button" onclick="clearAll()" id='clear-All' title="Clear All Tasks"><i class="bi bi-x-circle"></i></button>
+          <button id="history" class="btn btn-outline-info" type="button" onclick="toggleHistory()" title="Show History"><i class="bi bi-clock-history"></i></button>
         </div>
         <div id="history-container" ></div>
       </div>
