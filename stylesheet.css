@@ -6,3 +6,8 @@
 .form-check-input {
     margin-right: 10px;
 }
+
+img {
+
+    border-image: 10px;
+}
