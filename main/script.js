@@ -86,11 +86,19 @@ function handleKeyPress(event) {
 
 function clearAll() {
     const itemList = document.getElementById("itemList");
+    if (!itemList) {
+        console.error("Element with id 'itemList' not found.");
+        return;
+    }
+
+    // Move the currentList tasks to the historyList
+    historyList.push(currentList);
+
+    // Clear the currentList and update the list display
     itemList.innerHTML = "";
     currentList = [];
-    localStorage.removeItem('savedList');
-    updateList();
 }
+
 
 let isHistoryShown = false;
 
