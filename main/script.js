@@ -95,8 +95,10 @@ function clearAll() {
     historyList.push(currentList);
 
     // Clear the currentList and update the list display
-    itemList.innerHTML = "";
-    currentList = [];
+    itemList.innerHTML = "" ;
+    currentList = []; // Clear the currentList array
+    localStorage.removeItem('savedList');
+    updateList();
 }
 
 
