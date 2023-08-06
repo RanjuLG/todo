@@ -7,7 +7,14 @@
     margin-right: 10px;
 }
 
-img {
+#clear, #history, #save {
 
-    border-image: 10px;
+margin-right: 5px;
+margin-left: 5px;
+    
+}
+
+#crud {
+
+    width: auto;
 }

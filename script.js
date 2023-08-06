@@ -138,7 +138,7 @@ function displayCurrentDate() {
     });
 
     // Insert the date into the HTML element.
-    currentDateElement.textContent = `Today is ${formattedDate}.`;
+    currentDateElement.textContent = `Today is ${formattedDate}`;
 }
 
 // Call the function to display the current date when the page finishes loading.
