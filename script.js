@@ -87,6 +87,8 @@ function clearAll() {
     const itemList = document.getElementById("itemList");
     itemList.innerHTML = "";
     currentList = [];
+    localStorage.removeItem('savedList');
+    updateList();
 }
 
 let isHistoryShown = false;
