@@ -19,6 +19,7 @@ function updateList() {
     // Clear historyList before updating
     historyList.length = 0;
 
+    
 
     currentList.forEach((itemText) => {
         const listItem = document.createElement("li");
