@@ -1,0 +1,21 @@
+.list-group {
+    display: flex;
+    align-items: flex-start;
+}
+
+.form-check-input {
+    margin-right: 10px;
+}
+
+#clear, #history, #save {
+
+margin-right: 5px;
+margin-left: 5px;
+border-radius: auto;
+    
+}
+
+#crud {
+
+    width: auto;
+}
