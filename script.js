@@ -4,7 +4,7 @@ let currentList = [];
 // Load saved tasks from local storage
 if (localStorage.getItem('savedList')) {
     currentList = JSON.parse(localStorage.getItem('savedList'));
-    updateList();
+    updateList(); // Call updateList() to display the saved tasks
 }
 
 function updateList() {
@@ -115,3 +115,8 @@ function saveList() {
     // Save the currentList to local storage
     localStorage.setItem('savedList', JSON.stringify(currentList));
 }
+
+// Event listener to call updateList() when the DOM is fully loaded
+document.addEventListener("DOMContentLoaded", function () {
+    updateList();
+});
