@@ -12,6 +12,7 @@
   <body>
     <div class="container mt-4">
       <h3>Todo</h3>
+      <p id="currentDate">Today's date will be displayed here.</p>
       <div class="input-group mb-3 w-25">
         <button class="btn btn-outline-primary" type="button" id="button-addon1" onclick= "addToList()" >+</button>
         <input type="text" id="listItemInput" class="form-control" placeholder="Add tasks" onkeypress ="handleKeyPress(event)" onchange="toggleLabelStrikeThrough(this)" aria-label="Example text with button addon" aria-describedby="button-addon1">

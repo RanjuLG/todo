@@ -121,3 +121,25 @@ function saveList() {
 document.addEventListener("DOMContentLoaded", function () {
     updateList();
 });
+
+
+// This function will be called when the page loads.
+function displayCurrentDate() {
+    const currentDateElement = document.getElementById('currentDate');
+
+    // Get the current date.
+    const currentDate = new Date();
+
+    // Format the date as "Month day, Year" (e.g., "August 6, 2023").
+    const formattedDate = currentDate.toLocaleDateString('en-US', {
+        day: 'numeric',
+        month: 'long',
+        
+    });
+
+    // Insert the date into the HTML element.
+    currentDateElement.textContent = `Today is ${formattedDate}.`;
+}
+
+// Call the function to display the current date when the page finishes loading.
+document.addEventListener('DOMContentLoaded', displayCurrentDate);
